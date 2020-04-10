@@ -1,0 +1,155 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.covid3"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="17"
+8-->D:\covid3\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\covid3\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->D:\covid3\app\src\main\AndroidManifest.xml:5:5-79
+11-->D:\covid3\app\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->D:\covid3\app\src\main\AndroidManifest.xml:6:5-80
+12-->D:\covid3\app\src\main\AndroidManifest.xml:6:22-77
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->D:\covid3\app\src\main\AndroidManifest.xml:7:5-67
+13-->D:\covid3\app\src\main\AndroidManifest.xml:7:22-64
+14
+15    <application
+15-->D:\covid3\app\src\main\AndroidManifest.xml:9:5-35:19
+16        android:allowBackup="true"
+16-->D:\covid3\app\src\main\AndroidManifest.xml:10:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.0.1] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\16eb53875ba78320b1fcf5cac2c4c8c7\core-1.0.1\AndroidManifest.xml:22:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->D:\covid3\app\src\main\AndroidManifest.xml:11:9-43
+20        android:label="@string/app_name"
+20-->D:\covid3\app\src\main\AndroidManifest.xml:12:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->D:\covid3\app\src\main\AndroidManifest.xml:13:9-54
+22        android:supportsRtl="true"
+22-->D:\covid3\app\src\main\AndroidManifest.xml:14:9-35
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme" >
+24-->D:\covid3\app\src\main\AndroidManifest.xml:15:9-40
+25        <activity android:name="com.example.covid3.shop_order" />
+25-->D:\covid3\app\src\main\AndroidManifest.xml:16:9-57
+25-->D:\covid3\app\src\main\AndroidManifest.xml:16:19-45
+26        <activity android:name="com.example.covid3.hospital_help" />
+26-->D:\covid3\app\src\main\AndroidManifest.xml:17:9-51
+26-->D:\covid3\app\src\main\AndroidManifest.xml:17:19-48
+27        <activity android:name="com.example.covid3.upload_image" />
+27-->D:\covid3\app\src\main\AndroidManifest.xml:18:9-50
+27-->D:\covid3\app\src\main\AndroidManifest.xml:18:19-47
+28        <activity android:name="com.example.covid3.fact_checker" />
+28-->D:\covid3\app\src\main\AndroidManifest.xml:19:9-50
+28-->D:\covid3\app\src\main\AndroidManifest.xml:19:19-47
+29        <activity android:name="com.example.covid3.prediction" />
+29-->D:\covid3\app\src\main\AndroidManifest.xml:20:9-48
+29-->D:\covid3\app\src\main\AndroidManifest.xml:20:19-45
+30        <activity android:name="com.example.covid3.faq" />
+30-->D:\covid3\app\src\main\AndroidManifest.xml:21:9-41
+30-->D:\covid3\app\src\main\AndroidManifest.xml:21:19-38
+31        <activity android:name="com.example.covid3.upi" />
+31-->D:\covid3\app\src\main\AndroidManifest.xml:22:9-41
+31-->D:\covid3\app\src\main\AndroidManifest.xml:22:19-38
+32        <activity android:name="com.example.covid3.helpline" />
+32-->D:\covid3\app\src\main\AndroidManifest.xml:23:9-46
+32-->D:\covid3\app\src\main\AndroidManifest.xml:23:19-43
+33        <activity android:name="com.example.covid3.urlactivity" />
+33-->D:\covid3\app\src\main\AndroidManifest.xml:24:9-49
+33-->D:\covid3\app\src\main\AndroidManifest.xml:24:19-46
+34        <activity
+34-->D:\covid3\app\src\main\AndroidManifest.xml:25:9-34:20
+35            android:name="com.example.covid3.MainActivity"
+35-->D:\covid3\app\src\main\AndroidManifest.xml:26:13-41
+36            android:label="@string/app_name"
+36-->D:\covid3\app\src\main\AndroidManifest.xml:27:13-45
+37            android:theme="@style/AppTheme.NoActionBar" >
+37-->D:\covid3\app\src\main\AndroidManifest.xml:28:13-56
+38            <intent-filter>
+38-->D:\covid3\app\src\main\AndroidManifest.xml:29:13-33:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->D:\covid3\app\src\main\AndroidManifest.xml:30:17-69
+39-->D:\covid3\app\src\main\AndroidManifest.xml:30:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->D:\covid3\app\src\main\AndroidManifest.xml:32:17-77
+41-->D:\covid3\app\src\main\AndroidManifest.xml:32:27-74
+42            </intent-filter>
+43        </activity>
+44        <activity
+44-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\259bbdd3ddf8bcc75628473da30acfe0\jetified-firebase-auth-16.0.5\AndroidManifest.xml:24:9-31:50
+45            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+45-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\259bbdd3ddf8bcc75628473da30acfe0\jetified-firebase-auth-16.0.5\AndroidManifest.xml:25:13-85
+46            android:excludeFromRecents="true"
+46-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\259bbdd3ddf8bcc75628473da30acfe0\jetified-firebase-auth-16.0.5\AndroidManifest.xml:26:13-46
+47            android:exported="true"
+47-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\259bbdd3ddf8bcc75628473da30acfe0\jetified-firebase-auth-16.0.5\AndroidManifest.xml:27:13-36
+48            android:launchMode="singleTask"
+48-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\259bbdd3ddf8bcc75628473da30acfe0\jetified-firebase-auth-16.0.5\AndroidManifest.xml:28:13-44
+49            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+49-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\259bbdd3ddf8bcc75628473da30acfe0\jetified-firebase-auth-16.0.5\AndroidManifest.xml:29:13-102
+50            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+50-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\259bbdd3ddf8bcc75628473da30acfe0\jetified-firebase-auth-16.0.5\AndroidManifest.xml:30:13-72
+51
+52        <service
+52-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\259bbdd3ddf8bcc75628473da30acfe0\jetified-firebase-auth-16.0.5\AndroidManifest.xml:33:9-39:19
+53            android:name="com.google.firebase.components.ComponentDiscoveryService"
+53-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\259bbdd3ddf8bcc75628473da30acfe0\jetified-firebase-auth-16.0.5\AndroidManifest.xml:34:13-84
+54            android:exported="false" >
+54-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\259bbdd3ddf8bcc75628473da30acfe0\jetified-firebase-auth-16.0.5\AndroidManifest.xml:35:13-37
+55            <meta-data
+55-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\259bbdd3ddf8bcc75628473da30acfe0\jetified-firebase-auth-16.0.5\AndroidManifest.xml:36:13-38:85
+56                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+56-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\259bbdd3ddf8bcc75628473da30acfe0\jetified-firebase-auth-16.0.5\AndroidManifest.xml:37:17-109
+57                android:value="com.google.firebase.components.ComponentRegistrar" />
+57-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\259bbdd3ddf8bcc75628473da30acfe0\jetified-firebase-auth-16.0.5\AndroidManifest.xml:38:17-82
+58        </service>
+59
+60        <activity
+60-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\0eec9f6710238b719d7ed4a923604cd6\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+61            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+61-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\0eec9f6710238b719d7ed4a923604cd6\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+62            android:exported="false"
+62-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\0eec9f6710238b719d7ed4a923604cd6\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+63            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+63-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\0eec9f6710238b719d7ed4a923604cd6\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+64
+65        <provider
+65-->[com.google.firebase:firebase-common:16.0.3] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\d9eb83357a31634b3fbe2bbaab01a6de\jetified-firebase-common-16.0.3\AndroidManifest.xml:10:9-14:39
+66            android:name="com.google.firebase.provider.FirebaseInitProvider"
+66-->[com.google.firebase:firebase-common:16.0.3] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\d9eb83357a31634b3fbe2bbaab01a6de\jetified-firebase-common-16.0.3\AndroidManifest.xml:11:13-77
+67            android:authorities="com.example.covid3.firebaseinitprovider"
+67-->[com.google.firebase:firebase-common:16.0.3] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\d9eb83357a31634b3fbe2bbaab01a6de\jetified-firebase-common-16.0.3\AndroidManifest.xml:12:13-72
+68            android:exported="false"
+68-->[com.google.firebase:firebase-common:16.0.3] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\d9eb83357a31634b3fbe2bbaab01a6de\jetified-firebase-common-16.0.3\AndroidManifest.xml:13:13-37
+69            android:initOrder="100" />
+69-->[com.google.firebase:firebase-common:16.0.3] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\d9eb83357a31634b3fbe2bbaab01a6de\jetified-firebase-common-16.0.3\AndroidManifest.xml:14:13-36
+70
+71        <meta-data
+71-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\55ad9a4a509134ae9264169b20fe8d08\jetified-play-services-basement-16.1.0\AndroidManifest.xml:23:9-25:69
+72            android:name="com.google.android.gms.version"
+72-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\55ad9a4a509134ae9264169b20fe8d08\jetified-play-services-basement-16.1.0\AndroidManifest.xml:24:13-58
+73            android:value="@integer/google_play_services_version" />
+73-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\55ad9a4a509134ae9264169b20fe8d08\jetified-play-services-basement-16.1.0\AndroidManifest.xml:25:13-66
+74
+75        <provider
+75-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\481e98c58dcdecefc648e2ff1ea7034b\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+76            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+76-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\481e98c58dcdecefc648e2ff1ea7034b\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+77            android:authorities="com.example.covid3.lifecycle-process"
+77-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\481e98c58dcdecefc648e2ff1ea7034b\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+78            android:exported="false"
+78-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\481e98c58dcdecefc648e2ff1ea7034b\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+79            android:multiprocess="true" />
+79-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\K S RAKSHIT\.gradle\caches\transforms-2\files-2.1\481e98c58dcdecefc648e2ff1ea7034b\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+80    </application>
+81
+82</manifest>

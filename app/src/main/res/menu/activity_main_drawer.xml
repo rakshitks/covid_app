@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_location_on_black_24dp"
+            android:title="Covid19 Tracker" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Report Fake News" />
+        <item
+            android:id="@+id/nav_slideshow1"
+            android:icon="@drawable/ic_warning_black_24dp"
+            android:title="Fake News Verifier" />
+        <item
+            android:id="@+id/nav_slideshow2"
+            android:icon="@drawable/ic_local_hospital_black_24dp"
+            android:title="Hospital near me" />
+        <item
+            android:id="@+id/nav_slideshow3"
+            android:icon="@drawable/ic_add_shopping_cart_black_24dp"
+            android:title="Groceries" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_local_library_black_24dp"
+            android:title="Symptoms Checker" />
+
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_picture_as_pdf_black_24dp"
+            android:title="FAQs" />
+
+    </group>
+
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_attach_money_black_24dp"
+                android:title="Donate" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_contact_phone_black_24dp"
+                android:title="Helpline" />
+        </menu>
+    </item>
+
+</menu>
