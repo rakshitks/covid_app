@@ -4,23 +4,6 @@
             "outputFile": "D:\\covid3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rAU\\values-en-rAU.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\K S RAKSHIT\\.gradle\\caches\\transforms-2\\files-2.1\\463a413cd265113a2f99aa2e4567a9c7\\jetified-navigation-ui-2.0.0\\res\\values-en-rAU\\values-en-rAU.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,161",
-                        "endColumns": "105,116",
-                        "endOffsets": "156,273"
-                    },
-                    "to": {
-                        "startLines": "29,30",
-                        "startColumns": "4,4",
-                        "startOffsets": "2764,2870",
-                        "endColumns": "105,116",
-                        "endOffsets": "2865,2982"
-                    }
-                },
-                {
                     "source": "C:\\Users\\K S RAKSHIT\\.gradle\\caches\\transforms-2\\files-2.1\\16eb53875ba78320b1fcf5cac2c4c8c7\\core-1.0.1\\res\\values-en-rAU\\values-en-rAU.xml",
                     "from": {
                         "startLines": "2",
@@ -35,6 +18,23 @@
                         "startOffsets": "3069",
                         "endColumns": "100",
                         "endOffsets": "3165"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\K S RAKSHIT\\.gradle\\caches\\transforms-2\\files-2.1\\d0a0900f349b16c0e8859675d74466dc\\jetified-navigation-ui-2.0.0\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,161",
+                        "endColumns": "105,116",
+                        "endOffsets": "156,273"
+                    },
+                    "to": {
+                        "startLines": "29,30",
+                        "startColumns": "4,4",
+                        "startOffsets": "2764,2870",
+                        "endColumns": "105,116",
+                        "endOffsets": "2865,2982"
                     }
                 },
                 {

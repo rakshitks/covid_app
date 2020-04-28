@@ -119,6 +119,11 @@ public class MainActivity extends AppCompatActivity {
                         Intent myIntent8 = new Intent(MainActivity.this,shop_order.class);
                         startActivity(myIntent8);
                         break;
+                    case R.id.nav_slideshow4:
+                        Toast.makeText(MainActivity.this, "Ask any question to chatbot", Toast.LENGTH_LONG).show();
+                        Intent myIntent99 = new Intent(MainActivity.this,shop_order.class);
+                        startActivity(myIntent99);
+                        break;
 
 
 

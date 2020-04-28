@@ -7,7 +7,7 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_location_on_black_24dp"
-            android:title="Covid19 Tracker" />
+            android:title="covid19_tracker" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
@@ -17,9 +17,13 @@
             android:icon="@drawable/ic_warning_black_24dp"
             android:title="Fake News Verifier" />
         <item
+            android:id="@+id/nav_slideshow4"
+            android:icon="@drawable/ic_live_help_black_24dp"
+            android:title="Chatbot" />
+        <item
             android:id="@+id/nav_slideshow2"
             android:icon="@drawable/ic_local_hospital_black_24dp"
-            android:title="Hospital near me" />
+            android:title="@string/hospital_near_me" />
         <item
             android:id="@+id/nav_slideshow3"
             android:icon="@drawable/ic_add_shopping_cart_black_24dp"

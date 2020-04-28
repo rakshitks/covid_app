@@ -1,10 +1,14 @@
 package com.example.covid3;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -21,7 +25,7 @@ public class hospital_help extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hospital_help);
         activity_4 = this;
-        setTitle("Report Fake News");
+        setTitle("Hospital near me");
 
         progDailog_4 = ProgressDialog.show(activity_4, "Loading","Please wait...", true);
         progDailog_4.setCancelable(false);
@@ -47,9 +51,11 @@ public class hospital_help extends AppCompatActivity {
             public void onPageFinished(WebView view, final String url) {
                 progDailog_4.dismiss();
             }
+
         });
 
         webView_4.loadUrl("https://covid-19iit.000webhostapp.com/");
+
 
     }
 }

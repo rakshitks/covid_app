@@ -1086,6 +1086,7 @@ drawable ic_attach_money_black_24dp
 drawable ic_contact_phone_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_live_help_black_24dp
 drawable ic_local_hospital_black_24dp
 drawable ic_local_library_black_24dp
 drawable ic_location_on_black_24dp
@@ -1252,6 +1253,7 @@ id nav_slideshow
 id nav_slideshow1
 id nav_slideshow2
 id nav_slideshow3
+id nav_slideshow4
 id nav_tools
 id nav_view
 id navigation_header_container
@@ -1343,6 +1345,7 @@ id text_slideshow
 id text_slideshow1
 id text_slideshow2
 id text_slideshow3
+id text_slideshow4
 id text_tools
 id textinput_counter
 id textinput_error
@@ -1372,6 +1375,7 @@ id webview1
 id webview2
 id webview4
 id webview6
+id webview8
 id wide
 id withText
 id wrap
@@ -1424,6 +1428,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_chatbot
 layout activity_fact_checker
 layout activity_faq
 layout activity_helpline
@@ -1459,6 +1464,7 @@ layout fragment_slideshow
 layout fragment_slideshow1
 layout fragment_slideshow2
 layout fragment_slideshow3
+layout fragment_slideshow4
 layout fragment_tools
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
@@ -1561,6 +1567,7 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
+string hospital_near_me
 string menu_gallery
 string menu_home
 string menu_send
