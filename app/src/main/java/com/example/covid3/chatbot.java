@@ -25,7 +25,7 @@ public class chatbot extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chatbot);
         activity_8 = this;
-        setTitle("Report Fake News");
+        setTitle("Chat bot");
 
         progDailog_8 = ProgressDialog.show(activity_8, "Loading","Please wait...", true);
         progDailog_8.setCancelable(false);
@@ -55,7 +55,7 @@ public class chatbot extends AppCompatActivity {
 
         });
 
-        webView_8.loadUrl("http://anticovid-chatbot.000webhostapp.com/");
+        webView_8.loadUrl("https://anticovid-chatbot.000webhostapp.com/");
 
 
     }

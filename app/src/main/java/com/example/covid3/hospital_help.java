@@ -10,53 +10,67 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.webkit.GeolocationPermissions;
+import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class hospital_help extends AppCompatActivity {
-    private WebView webView_4;
-    Activity activity_4 ;
-    private ProgressDialog progDailog_4;
-    @SuppressLint("NewApi")
+    public class GeoWebViewClient extends WebViewClient {
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, String url) {
+            // When user clicks a hyperlink, load in the existing WebView
+            view.loadUrl(url);
+            return true;
+        }
+    }
 
+    /**
+     * WebChromeClient subclass handles UI-related calls
+     * Note: think chrome as in decoration, not the Chrome browser
+     */
+    public class GeoWebChromeClient extends WebChromeClient {
+        @Override
+        public void onGeolocationPermissionsShowPrompt(String origin,
+                                                       GeolocationPermissions.Callback callback) {
+            // Always grant permission since the app itself requires location
+            // permission and the user has therefore already granted it
+            callback.invoke(origin, true, false);
+        }
+    }
+
+    WebView mWebView;
+
+    /** Called when the activity is first created. */
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hospital_help);
-        activity_4 = this;
-        setTitle("Hospital near me");
+        mWebView = (WebView) findViewById(R.id.webview4);
+        // Brower niceties -- pinch / zoom, follow links in place
+        mWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
+        mWebView.getSettings().setBuiltInZoomControls(true);
+        mWebView.setWebViewClient(new GeoWebViewClient());
+        // Below required for geolocation
+        mWebView.getSettings().setJavaScriptEnabled(true);
+        mWebView.getSettings().setGeolocationEnabled(true);
+        mWebView.getSettings().setAppCacheEnabled(true);
+        mWebView.getSettings().setDatabaseEnabled(true);
+        mWebView.getSettings().setDomStorageEnabled(true);
+        mWebView.setWebChromeClient(new GeoWebChromeClient());
+        // Load google.com
+        mWebView.loadUrl("https://covid-19iit.000webhostapp.com/");
+    }
 
-        progDailog_4 = ProgressDialog.show(activity_4, "Loading","Please wait...", true);
-        progDailog_4.setCancelable(false);
-        webView_4 = (WebView) findViewById(R.id.webview4);
-        WebSettings settings = webView_4.getSettings();
-        settings.setDomStorageEnabled(true);
-
-
-
-        webView_4.getSettings().setJavaScriptEnabled(true);
-        webView_4.getSettings().setLoadWithOverviewMode(true);
-        webView_4.getSettings().setUseWideViewPort(true);
-        webView_4.setWebViewClient(new WebViewClient(){
-
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                progDailog_4.show();
-                view.loadUrl(url);
-
-                return true;
-            }
-            @Override
-            public void onPageFinished(WebView view, final String url) {
-                progDailog_4.dismiss();
-            }
-
-        });
-
-        webView_4.loadUrl("https://covid-19iit.000webhostapp.com/");
-
-
+    @Override
+    public void onBackPressed() {
+        // Pop the browser back stack or exit the activity
+        if (mWebView.canGoBack()) {
+            mWebView.goBack();
+        }
+        else {
+            super.onBackPressed();
+        }
     }
 }
-

@@ -48,7 +48,7 @@ public class fact_checker extends AppCompatActivity {
             }
         });
 
-        webView_2.loadUrl("http://factcheck.ksp.gov.in/");
+        webView_2.loadUrl("https://factcheck.ksp.gov.in/");
 
     }
 }

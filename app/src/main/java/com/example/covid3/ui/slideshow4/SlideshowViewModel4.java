@@ -6,14 +6,14 @@ import androidx.lifecycle.ViewModel;
 
 public class SlideshowViewModel4 extends ViewModel {
 
-    private MutableLiveData<String> mText1;
+    private MutableLiveData<String> mText4;
 
     public SlideshowViewModel4() {
-        mText1 = new MutableLiveData<>();
-        mText1.setValue("This is slideshow fragment");
+        mText4 = new MutableLiveData<>();
+        mText4.setValue("This is slideshow fragment");
     }
 
     public LiveData<String> getText() {
-        return mText1;
+        return mText4;
     }
 }

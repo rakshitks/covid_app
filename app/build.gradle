@@ -3,6 +3,7 @@ apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 29
+    ndkVersion "21.1.6352462"
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.example.covid3"
@@ -11,6 +12,9 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    aaptOptions {
+        cruncherEnabled = false
     }
     buildTypes {
         release {
